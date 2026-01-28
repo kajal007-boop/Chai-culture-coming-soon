@@ -11,7 +11,7 @@
         rel="stylesheet">
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/
-        css/all.min.css"/>
+        css/all.min.css">
         <style>
             * {
                 margin: 0;
@@ -102,17 +102,18 @@
                 color: #c9a24d;
                 font-size: 18px;
                 transition: 0.3s;
+                margin: 0  8px;
             }
-            .social a:hover {
-                transform: translate(-3px);
+            .socials a:hover {
+                transform: translateY(-3px);
             }
             @keyframes fadeUp {
                 from {
-                    
-                    transform: translateY(10px);
+                    opacity: 0;
+                    transform: translateY(12px);
                 }
                 to {
-                
+                    opacity: 1;
                     transform: translateY(0);
                 }
             }
@@ -145,11 +146,15 @@
         </div>
         <div class="launching">LAUNCHING SOON</div>
         <div class="email-box"><input type="email" id="email" placeholder="Enter your email"/>
-    <button onclick="subscribe()">Notify Me  </button>
+    <button type="button" onclick="subscribe()">Notify Me  </button>
         </div>
-        <div class="socials"><a href="#"><i class="fabfa-instagram"></i></a>
-        <a href="#"><i class="fabfa-twitter"></i></a>
-    <a href="#"><i class="fabfa-linkedin-in"></i></a></div>
+        <div class="socials">
+            <a href="#"><i class="fab 
+            fa-instagram"></i></a>
+        <a href="#"><i class="fab
+            fa-twitter"></i></a>
+    <a href="#"><i class="fab
+         fa-linkedin-in"></i></a></div>
     </div>
     <script>
         function subscribe() {
@@ -164,4 +169,5 @@
         }
     </script>
     </body>
+
 </html>
